@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop Interactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="gameboard">
+    <div class="line-group">
+        <div class="line line8">
+            <div class="lineNum">8</div>
+            <script>
+                for (let i = 1; i <= 8; i++) {
+                    document.write('<div class="square ' + (i % 2 == 0 ? 'green' : 'beige' ) + '">');
+                    document.write('<img src="images/BlackPawn.png" alt="Pawn piece" id="bpawnu' + i + '" class="BPawnu' + i + '" draggable>');
+                    document.write('</div>');
+                }
+            </script>
+        </div>
+        <div class="line line7">
+            <div class="lineNum">7</div>
+            <script>
+                for (let i = 1; i <= 8; i++) {
+                    document.write('<div class="square ' + (i % 2 == 0 ? 'beige' : 'green' ) + '">');
+                    document.write('<img src="images/BlackPawn.png" alt="Pawn piece" id="bpawnd' + i + '" class="BPawnd' + i + '" draggable>');
+                    document.write('</div>');
+                }
+            </script>
+        </div>
+        <div class="line line6">
+            <div class="lineNum">6</div>
+            <script>
+                for (let i = 1; i <= 8; i++) {
+                    document.write('<div class="square ' + (i % 2 == 0 ? 'green' : 'beige') + '">');
+                    document.write('</div>');
+                }
+            </script>
+        </div>
+        <div class="line line5">
+            <div class="lineNum">5</div>
+            <script>
+                for (let i = 1; i <= 8; i++) {
+                    document.write('<div class="square ' + (i % 2 == 0 ? 'beige' : 'green') + '">');
+                    document.write('</div>');
+                }
+            </script>
+        </div>
+        <div class="line line4">
+            <div class="lineNum">4</div>
+            <script>
+                for (let i = 1; i <= 8; i++) {
+                    document.write('<div class="square ' + (i % 2 == 0 ? 'green' : 'beige') + '">');
+                    document.write('</div>');
+                }
+            </script>
+        </div>
+        <div class="line line3">
+            <div class="lineNum">3</div>
+            <script>
+                for (let i = 1; i <= 8; i++) {
+                    document.write('<div class="square ' + (i % 2 == 0 ? 'beige' : 'green') + '">');
+                    document.write('</div>');
+                }
+            </script>
+        </div>
+        <div class="line line2">
+            <div class="lineNum">2</div>
+            <script>
+                for (let i = 1; i <= 8; i++) {
+                    document.write('<div class="square ' + (i % 2 == 0 ? 'green' : 'beige') + '">');
+                    document.write('<img src="images/WhitePawn.png" alt="Pawn piece" id="wpawnu' + i + '" class="WPawnu' + i + '" draggable>');
+                    document.write('</div>');
+                }
+            </script>
+        </div>
+        <div class="line line1">
+            <div class="lineNum">1</div>
+            <script>
+                for (let i = 1; i <= 8; i++) {
+                    document.write('<div class="square ' + (i % 2 == 0 ? 'beige' : 'green') + '">');
+                    document.write('<img src="images/WhitePawn.png" alt="Pawn piece" id="wpawnd' + i + '" class="WPawnd' + i + '" draggable>');
+                    document.write('</div>');
+                }
+            </script>
+        </div>
+        <div class="line line0">
+            <div class="lineNum X">x</div>
+            <div class="square white">a</div>
+            <div class="square white">b</div>
+            <div class="square white">c</div>
+            <div class="square white">d</div>
+            <div class="square white">e</div>
+            <div class="square white">f</div>
+            <div class="square white">g</div>
+            <div class="square white">h</div>
+        </div>
+    </div>
+    <p id="info"></p>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

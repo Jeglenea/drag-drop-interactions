@@ -1,0 +1,109 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+    align-items: center;
+
+}
+#gameboard{
+    display: flex;
+}
+.line-group {
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+}
+
+.lineNum{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-right: 15px;
+}
+.X{
+    color: white;
+}
+.square{
+    width:80px;
+    height:80px;
+}
+.white{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.beige{
+    background-color:rgb(227,227,199);
+}
+.green{
+    background-color: rgb(126, 189, 111);
+}
+#info{
+    position: absolute;
+    bottom: 10px;
+    left: 47%;
+    height: 20px;
+}
+.highlight{
+    background-color: rgb(233,102,102);
+}
+.target{
+    border:solid 10px rgb(169,56,56);
+    box-sizing:border-box;
+}
+.WKing{
+    height:80px;
+    width: 80px;
+}
+.WQueen{
+    height:80px;
+    width: 80px;
+}
+[class^="WBishop"] {
+    height: 80px;
+    width: 80px;
+}
+[class^="WKnight"] {
+    height: 80px;
+    width: 80px;
+}
+[class^="WRook"] {
+    height: 80px;
+    width: 80px;
+}
+[class^="WPawn"] {
+    height: 80px;
+    width: 80px;
+}
+[class^="BPawn"] {
+    height: 80px;
+    width: 80px;
+}
+[class^="BBishop"] {
+    height: 80px;
+    width: 80px;
+}
+[class^="BKnight"] {
+    height: 80px;
+    width: 80px;
+}
+[class^="BRook"] {
+    height: 80px;
+    width: 80px;
+}
+.BKing{
+    height:80px;
+    width: 80px;
+}
+.BQueen{
+    height:80px;
+    width: 80px;
+}
+
+
